@@ -85,11 +85,11 @@
 
 			// timing
 			console.time("fetching data");
-			fetch("https://api.github.com/users/wesbos")
+			fetch("https://api.github.com/users/gitaoh")
 				.then((data) => data.json())
 				.then((data) => {
 					console.timeEnd("fetching data");
-					console.log(data);
+					console.table(data);
 				});
 
 			console.table(dogs);
